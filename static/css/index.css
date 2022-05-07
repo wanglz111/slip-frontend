@@ -292,17 +292,3 @@ body {
     font-size: 18px;
     font-weight: 500;
 }
-
-.wealth {
-    width: 270px;
-    height: 50px;
-    background-color: #fff;
-}
-
-.wealth ul li a {
-    display: inline-block;
-    width: 135px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-}

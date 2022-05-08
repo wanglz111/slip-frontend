@@ -3,6 +3,8 @@ body {
     min-width: 820px;
     font-family: "JetBrains Mono", "Luxi Sans", "Segoe UI", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Logo";
 }
+
+
 /* 标题栏 */
 
 .top {
@@ -99,7 +101,8 @@ body {
 
 
 /*问题板块*/
-.left .content .question{
+
+.left .content .question {
     width: 770px;
     height: 120px;
     margin: 0 auto;
@@ -107,6 +110,7 @@ body {
     background-color: #18222d;
     border: #393f4e 1px solid;
 }
+
 .left .content .question .Question_info {
     float: left;
     width: 600px;
@@ -114,20 +118,21 @@ body {
     height: 50px;
     color: aliceblue;
 }
+
 .left .content .question .Question_info h3 a {
     color: aliceblue;
     font-size: 18px;
     font-weight: 400;
 }
+
 .left .content .question .Question_info h3 a:hover {
     text-decoration: underline;
 }
-.left .content .question .title{
+
+.left .content .question .title {
     padding-bottom: 13px;
     color: #fff;
     opacity: 0.4;
-
-
 }
 
 .left .content .question .Question_info .controll {
@@ -138,7 +143,6 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
-
 
 .left .content .question .Question_info p {
     padding-left: 10px;
@@ -161,29 +165,27 @@ body {
     line-height: 200%;
 }
 
+
 /* 问题面板头像部分 */
-.left .content .question  .TopicAvatar {
+
+.left .content .question .TopicAvatar {
     padding-top: 2px;
     float: right;
     width: 100px;
     height: 100px;
-    
-
 }
 
 .left .content .question .TopicAvatar img {
     display: inline-block;
     width: 60px;
     height: 60px;
-
     border-radius: 10px;
 }
 
 
-
-
 /*具体问题板块*/
-.left .content .specific_question{
+
+.left .content .specific_question {
     width: 770px;
     height: 90px;
     margin: 0 auto;
@@ -199,12 +201,9 @@ body {
 }
 
 
-
-
-
-
 /*标签和时间的面板*/
-.left .content .timeAndTags{
+
+.left .content .timeAndTags {
     width: 770px;
     height: 40px;
     margin: 0 auto;
@@ -212,8 +211,8 @@ body {
     background-color: #3e5874;
     border: #393f4e 1px solid;
 }
+
 .left .content .timeAndTags .timeAndTags_info {
-   
     width: 600px;
     padding: 10px auto;
     height: 40px;
@@ -223,9 +222,7 @@ body {
 .left .content .timeAndTags .timeAndTags_info p {
     display: inline-block;
     vertical-align: middle;
-    
 }
-
 
 .left .content .timeAndTags .timeAndTags_info p span {
     display: inline-block;
@@ -234,38 +231,23 @@ body {
     font-size: 12px;
     line-height: 200%;
 }
-.left .content .timeAndTags .timeAndTags_info  #type {
+
+.left .content .timeAndTags .timeAndTags_info #type {
     padding: 0 10px;
     font-size: 13px;
     line-height: 24px;
     background-color: #393f4e;
     color: aliceblue;
     border-radius: 5px;
-
-
 }
 
-.left .content .timeAndTags .timeAndTags_info  #type:hover {
+.left .content .timeAndTags .timeAndTags_info #type:hover {
     background-color: rgb(156, 174, 199);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 帖子展示部分 */
+
 .left .content .item {
     width: 770px;
     height: 80px;

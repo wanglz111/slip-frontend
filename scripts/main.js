@@ -1,5 +1,3 @@
-
-
 function time(){
     var timestamp = Date.now();     
     var tmp = new Date(timestamp);

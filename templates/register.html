@@ -4,43 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../static/css/register.css">
 </head>
 
 <body>
-    <h1>Register</h1>
-    <div>
-        <p th:text="${msg}" style="color:red">欢迎注册</p>
+    <div class="register">
+        <div class="title">
+            <h1>Register</h1>
+            <img src="../static/images/signup.png" alt = "sign-up">
+        </div>
+        <div>
+            <p th:text="${msg}" style="color:red">欢迎注册</p>
+        </div>
+        <div class="register_info">
+            <form th:action="@{/upload}" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword">
+                </div>
+                <div>
+                    <label for="telephone">Telephone:</label>
+                    <input type="text" name="telephone" id="telephone">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <!--avatar-->
+                <div>
+                    <label for="avatar">Avatar:(不上传为默认生成)</label>
+                    <input type="file" name="avatar" id="avatar">
+                </div>
+                <div>
+                    <input type="submit" value="Register" id="submit">
+                </div>
+            </form>
+        </div>
     </div>
-    <form th:action="@{/upload}" method="post" enctype="multipart/form-data">
-        <div>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
-        </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
-        </div>
-        <div>
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" name="confirmPassword" id="confirmPassword">
-        </div>
-        <div>
-            <label for="telephone">Telephone:</label>
-            <input type="text" name="telephone" id="telephone">
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-        </div>
-        <!--avatar-->
-        <div>
-            <label for="avatar">Avatar:(不上传为默认生成)</label>
-            <input type="file" name="avatar" id="avatar">
-        </div>
-        <div>
-            <input type="submit" value="Register">
-        </div>
-    </form>
 </body>
 
 </html>

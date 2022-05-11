@@ -397,12 +397,13 @@ body {
     display: inline-block;
     margin-left: 200px;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 .rightBar .emotion .create-emotion form .button:hover {
     background-color: #09840d;
     border: none;
-    box-shadow: 0px 0px 2px #3e5874;
+    box-shadow: 0 0 2px #3e5874;
 }
 
 .rightBar .emotion .emotion-content {
@@ -411,6 +412,7 @@ body {
 }
 
 .rightBar .emotion .emotion-content .emotion-item {
+    position: relative;
     width: 270px;
     border: 1px solid rgba(100, 100, 100, 0.4);
 }
@@ -424,6 +426,25 @@ body {
     font-weight: 500;
     text-indent: 2em;
     color: #bfbfbf;
+}
+
+.rightBar .emotion .emotion-content .emotion-item .button {
+    position: absolute;
+    left: 5px;
+    bottom: 3px;
+    padding: 3px;
+    background-color: #16446c;
+    border: none;
+    color: #bfbfbf;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.rightBar .emotion .emotion-content .emotion-item .button:hover {
+    background-color: #09840d;
+    border: none;
 }
 
 .rightBar .emotion .emotion-content .emotion-item span {

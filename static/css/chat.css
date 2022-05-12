@@ -58,12 +58,13 @@ body {
 .sep20 {
     height: 20px;
     width: auto;
-    background-color: #3e5874;
+    background-color: #22303f;
 }
 
 .sep10 {
     height: 10px;
     width: auto;
+    background-color: #22303f;
 }
 
 

@@ -1,0 +1,169 @@
+body {
+    background-color: #22303f;
+    min-width: 820px;
+    font-family: "JetBrains Mono", "Luxi Sans", "Segoe UI", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Logo";
+}
+
+
+/* 两个间隔标签 */
+
+.sep20 {
+    height: 20px;
+    width: auto;
+    background-color: #22303f;
+}
+
+.sep10 {
+    height: 10px;
+    width: auto;
+    background-color: #22303f;
+}
+
+
+/* 标题栏 */
+
+.top {
+    height: 44px;
+    width: 100%;
+    background-color: #18222d;
+}
+
+.top .content {
+    height: 44px;
+    width: 1100px;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+
+.top .tools {
+    display: float;
+    float: right;
+    /* background-color: #fff; */
+}
+
+.top .tools ul li {
+    height: 44px;
+    display: inline-block;
+    padding: 0 0 0 20px;
+    line-height: 44px;
+}
+
+.top .tools ul li a {
+    text-align: right;
+    color: #9caec7;
+}
+
+.top .tools ul li a:hover {
+    color: #b6c7de;
+}
+
+
+/* 版心在中间 */
+
+.wrapper {
+    width: 1100px;
+    height: auto;
+    background-color: #3e5874;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+    width: 770px;
+    height: auto;
+}
+
+.left .topic-header {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #18222d;
+    font-size: 18px;
+    border: 1px solid #3e5874;
+}
+
+.left .topic-header .href {
+    width: 770px;
+    height: auto;
+    font-size: 16px;
+}
+
+.left .topic-header .href a {
+    color: #bfbfbf;
+}
+
+.left .topic-header .href a:hover {
+    color: #99dff9;
+}
+
+.left .topic-header .href span {
+    color: #8b8b8b;
+}
+
+.left .topic-header .topic-title {
+    position: relative;
+}
+
+.left .topic-header .topic-title h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 10px 0 10px;
+    padding: 0;
+    color: #fff;
+}
+
+.left .topic-header .topic-title #author,
+#click-count {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.left .topic-header .topic-title #time {
+    font-size: 14px;
+    color: #dadada;
+}
+
+.left .topic-header .topic-title img {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    max-width: 55px;
+    max-height: 55px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.left .topic-content {
+    padding: 30px;
+    font-size: 18px;
+    color: #bfbfbf;
+    background-color: #18222d;
+    border: 1px solid #3e5874;
+    border-radius: 5px;
+}
+
+.left .topic-content p {
+    text-indent: 2em;
+}
+
+.left .topic-content span {
+    float: right;
+    color: #631212;
+}
+
+.left .comments {
+    padding: 5px;
+    font-size: 16px;
+    color: #bfbfbf;
+    background-color: #18222d;
+    border: 1px solid #328ff3;
+    border-radius: 5px;
+}
+
+.left .comments .cell .reply-avatar img {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    max-height: 48px;
+    border-radius: 10px;
+}

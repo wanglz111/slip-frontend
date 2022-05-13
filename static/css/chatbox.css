@@ -1,0 +1,275 @@
+body {
+    background-color: #22303f;
+    min-width: 820px;
+    font-family: "JetBrains Mono", "Luxi Sans", "Segoe UI", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Logo";
+}
+
+
+/* 标题栏 */
+
+.top {
+    height: 44px;
+    width: 100%;
+    background-color: #18222d;
+}
+
+.top .content {
+    height: 44px;
+    width: 1100px;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+
+.top .tools {
+    display: float;
+    float: right;
+    /* background-color: #fff; */
+}
+
+.top .tools ul li {
+    height: 44px;
+    display: inline-block;
+    padding: 0 0 0 20px;
+    line-height: 44px;
+}
+
+.top .tools ul li a {
+    text-align: right;
+    color: #9caec7;
+}
+
+.top .tools ul li a:hover {
+    color: #b6c7de;
+}
+
+.wrapper {
+    width: 1100px;
+    height: auto;
+    background-color: #3e5874;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* 定义一个20px高的间隔空间 */
+
+.sep20 {
+    height: 20px;
+    width: auto;
+    background-color: #22303f;
+}
+
+.sep10 {
+    height: 10px;
+    width: auto;
+    background-color: #22303f;
+}
+
+
+
+/* 左侧主体部分 */
+.left {
+    float: left;
+    width: 250px;
+    height: auto;
+    margin-left: 30px;
+}
+
+
+/*好友列表*/
+.left .content .friends_list{
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #18222d;
+    border: #393f4e 1px solid;
+    
+}
+
+
+
+.left .content .friends_list .title{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+/*具体好友*/
+.left .content .friend{
+    width: 250px;
+    height: 600px;
+    margin: 0 auto;
+  
+    background-color: #18222d;
+    border: #393f4e 1px solid; 
+
+}
+/*具体好友信息*/
+.left .content .friend .friend_info{
+    width: 250px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #3e5874;
+    border: #393f4e 1px solid; 
+    cursor: pointer;
+    
+
+}
+/*
+.left .content .friend .friend_info :hover{
+    background-color: #b6c7de;
+
+}
+*/
+
+
+/* 好友列表头像部分 */
+
+.left .content .friend .friend_info .TopicAvatar {
+    padding-top: 2px;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.left .content  .friend .friend_info .TopicAvatar img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+.left .content .friend .friend_info .TopicInfo {
+    float: left;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding: auto;
+    height: 30px;
+   
+
+}
+
+.left .content .friend .friend_info .TopicInfo h3 a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+ 
+}
+
+.left .content .friend .friend_info h3 a:hover {
+    text-decoration: underline;
+}
+
+
+.left .content .friend .friend_info .TopicInfo h4 {
+    color: aliceblue;
+    opacity: 0.4;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+
+.left .content .friend .friend_info  .TopicNow {
+    float: right;
+    margin: 13px 20px 13px 0;
+    padding: 2px 6px;
+    border-radius: 8px;
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #d1d5d9;
+    background-color: rgb(57, 63, 78);
+}
+
+
+/* 聊天框 */
+
+.chatbox {
+    float: right;
+    width: 700px;
+    height: 600px;
+    background-color: #3e5874;
+
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+ 
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .darker {
+ 
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+  
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  .time-left {
+    float: left;
+    color: #999;
+
+  }
+
+/*刷新按钮*/
+
+.wrapper .chatbox_title{
+    float: right;
+    width: 700px;
+    height: 40px;
+    background-color: #3e5874;
+    border: #393f4e 1px solid; ;
+}
+.wrapper .chatbox_title .refresh{
+    height: 40px;
+    width: auto;
+}
+
+.wrapper .chatbox_title .refresh .button{
+    margin-top: 3px;
+    margin-left: 3px;
+    height: 30px;
+    width: 100px;
+    background-color: rgba(156, 174, 199, 0.8);
+    border-radius: 5px;
+    border: 1px solid rgba(156, 174, 199, 0.7);
+}
+.wrapper .chatbox_title .refresh .button:hover{
+    background-color: #22303f;
+    cursor: pointer;
+    color: white;
+}

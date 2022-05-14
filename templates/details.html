@@ -2,12 +2,12 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>[[${topic.title}]]</title>
+    <title>Slip</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
-    <link rel="stylesheet" th:href="@{/css/details.css}">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/details.css">
 </head>
 
 <body>
@@ -16,17 +16,10 @@
             <div class="tools" th:if="${session['loginUser']}!=null">
                 <ul>
                     <li><a href="#">首页</a></li>
-                    <li><a href="#">[[${session.loginUser.name}]]</a></li>
+                    <li><a href="#">lucas</a></li>
                     <li><a href="#">emotion</a></li>
                     <li><a href="#">设置</a></li>
                     <li><a href="#">退出</a></li>
-                </ul>
-            </div>
-            <div class="tools" th:if="${session['loginUser']}==null">
-                <ul>
-                    <li><a th:href="@{/}">首页</a></li>
-                    <li><a th:href="@{/register}">注册</a></li>
-                    <li><a th:href="@{/login}">登陆</a></li>
                 </ul>
             </div>
         </div>
@@ -41,8 +34,8 @@
                     <a href="#">News</a>
                 </div>
                 <div class="topic-title">
-                    <h3>[[${topic.title}]]</h3>
-                    <span id="author"><a th:href="@{'/user/'+${user.id}}" th:text="${user.name}"></a> · </span>
+                    <h3>北约露出獠牙，美防长说出真实意图！乌美讨论如何使用俄被冻资产</h3>
+                    <span id="author"><a href="#" ></a>lucas · </span>
                     <span id="time">[[${topic.latestCommentTime}]] · </span>
                     <span id="click-count">[[${topicClickCount}]] clicks</span>
                     <div class="avatar"><img th:src="${user.avatar}" alt="avatar"></div>
@@ -60,32 +53,71 @@
                         <span>· [[${localTime}]] +08:00</span>
                     </div>
                 </div>
-                <div th:each="comment,status:${comments}">
+                <div>
                     <div class="cell">
                         <div class="reply-avatar">
-                            <a th:href="@{'/user/'+${comment.user.id}}">
-                                <img th:src="${comment.user.avatar}" alt="avatar">
+                            <a href="#">
+                                <img src="../static/images/0422de8ba1bd4cb7b5f0fc2c2991c76e.png" alt="avatar">
                             </a>
                         </div>
                         <div class="reply-info">
-                            <span id="user-name"><a th:href="@{'/user/'+${comment.user.id}}">[[${comment.user.name}]]</a></span>
-                            <span id="time"> · [[${comment.time}]]</span>
-                            <span id="count" th:text="${status.count}"></span>
-                            <p>[[${comment.content}]]</p>
+                            <span id="user-name"><a href="#">lucas</a></span>
+                            <span id="time"> · 2022-05-14 10:09:04 </span>
+                            <span id="count">16 clicks</span>
+                            <p>
+                                <p id="0QS42LSO">和英国、波兰、立陶宛、爱沙尼亚、拉脱维亚领导人一样，美国国务卿布林肯和美国防长奥斯汀从波兰坐火车为乌克兰送去了支持。</p>
+                                <p id="0QS8N1VJ">
+                                    <!--VIDEO#0-->
+                                </p>
+                                <p id="0QS42LSP">24日，布林肯奥斯汀与乌克兰总统泽连斯基进行了超过3小时的会谈，美国继续加码对乌援助，并承诺对俄制裁相应加码，至此美国对乌克兰的援助总额已达到了约37亿美元。布林肯25日发文，表示看到了基辅街上的民众，“并看到基辅战役已经获胜的清晰证据”，但与其他地区对比鲜明，俄军在其他地方的进攻仍在继续。泽连斯基25日感谢拜登支持乌克兰，希望美国成为乌克兰的安全担保国。</p>
+                                <!--IMG#0-->
+                                <p id="0QS42LSR">同一时间，北约国家对乌军援也在加快。波兰总理莫拉维茨基25日表示波兰已向乌克兰派遣坦克，加拿大已向乌克兰提供了M777榴弹炮和一些弹药。波兰方面并未透露援助坦克的数量，加拿大则是拿出了4门M777榴弹炮。</p>
+                                <p id="0QS42LSS">别看加拿大只拿出4门，但已经是其购买于阿富汗战争时期的37门榴弹炮中的近10%了。有加拿大网友调侃：“这将对加拿大武装部队的战备和训练水平产生10%的连锁反应”“乌克兰战争让加拿大人知道我们的军事装备有多弱”。</p>
+                                <p id="0QS42LST">还有人感叹特鲁多要跟上北约的脚步，在镜头前表现得骄傲而坚定，但是实际上却很可悲：“加拿大有37门榴弹炮，美国向乌克兰运送了72门榴弹炮，是我们的两倍，加上美国将为这些武器提供的14.4万枚炮弹。我们这样做似乎不是必要的。”</p>
+                                <p id="0QS42LSU">如今在西方，对俄制裁+对乌军援已成为一种“政治正确”，西方要向外展示的就是团结一致，但凡有国家不跟，都会被视为“异类”，被百般批评施压。</p>
+                                <!--IMG#1-->
+                                <p id="0QS42LT0">捷克通过铁路向乌克兰运送二手T-72坦克</p>
+                                <p id="0QS42LT1">北约内，对乌军援的大户英国、西班牙、荷兰、意大利仍在继续加码，法国等国也迈出一大步将提供重型武器，德国军火商跃跃欲试，斯洛伐克成为首个向乌克兰提供防空系统的国家，还有一些北约国家不仅提供了武器，还在培训乌克兰军人，教授他们使用西方武器。</p>
+                                <p id="0QS42LT2">就如欧洲多首脑去了乌克兰，美方才放心大胆的派人前去基辅一样，美国的套路一般都是：暗地里拱火，盟友打头阵，美国殿后，不妙时拉盟友挡枪，有好处占大头。</p>
+                                <p id="0QS42LT3">此次的俄乌冲突，美国却不如往日“低调”，愈发明目张胆。军援乌克兰，美国总统国家安全事务助理沙利文用了两个词：夜以继日、源源不断。美国每天有8-10架载满武器装备的飞机飞向乌克兰，24日就有至少6架美国大型运输机降落在距离乌克兰边境约90公里的波兰城市热舒夫。</p>
+                                <p id="0QS42LT4">主战坦克、步战车、牵引式榴弹炮、火箭炮、轮式自行榴弹炮等重型武器已越来越多地出现在乌克兰战场。美国还特意为乌克兰快速开发了一款巡飞弹。这款定制版的“凤凰幽灵”巡飞弹与乌克兰收到的另一种巡飞弹“弹簧刀”将在顿巴斯参战，为美国提供更多的一手资料。</p>
+                                <p align="center">
+                                    <!--IMG#2--><br/>资料图<br/></p>
+                                <p id="0QS42LT6">英国的“欧洲燕”多用途导弹也已在乌克兰首次实战，击落一架俄方无人机。可见，北约将乌克兰当成了新武器的试验场，将为国内军工注入新鲜血液。而在试验新武器推高局势的同时，乌克兰武装部队正逐渐向北约水平过度。</p>
+                                <p id="0QS42LT7">而在与泽连斯基会面后，美防长奥斯汀也说出了真实的意图。奥斯汀被问及美国现在认为在乌克兰取得的成功是什么时宣称：“我们希望看到乌克兰仍然是一个主权国家，一个能够保护其主权领土的民主国家。我们希望看到俄罗斯被削弱到这样一种地步，即它无法再做它在‘侵略’乌克兰期间所做的那种事。”</p>
+                                <p id="0QS42LT8">奥斯汀的此番言论被外界视为“异乎寻常的强硬”，帮助乌克兰是一回事，但美国同时希望看到一个被削弱的俄罗斯。</p>
+                                <p id="0QS42LT9">美国在做的也正是如此：不断推高赌注，用消耗战削弱俄罗斯，并且美国从未打过一场这样的代理人战争——美国自己明目张胆的走上前台。拉夫罗夫25日发出警告，核战争风险真实存在，其危险性不可低估，核战争是不可接受的，这是俄罗斯的原则立场。</p>
+                                <!--IMG#3-->
+                                <p id="0QS42LTB">拉夫罗夫说，北约组织向乌克兰运送武器，“实质上就是与俄罗斯交战”，莫斯科将把这些武器视为合法攻击目标。拉夫罗夫还表示，西方建议泽连斯基不要加快谈判，而是要他每次的立场都更强硬……所以在伊斯坦布尔会谈后，乌克兰的谈判立场出现巨大倒退，这种倒退是根据美国或英国的建议进行的，也许波兰和波罗的海也发挥了一定的作用。</p>
+                                <p id="0QS42LTC">战场上外交上都激战正酣时，乌克兰仍未放弃俄罗斯被冻结的海外资产。乌克兰总理什梅加尔表示，乌政府正在与美国和其他西方国家就使用被西方冻结的俄罗斯资产进行谈判，“任务和目标是找到如何使用这些被冻结资产的方案，以资助乌克兰在当前情况下的重建”。</p>
+                                <p id="0QS42LTD">泽连斯基与布林肯奥斯汀的合影中，站在中间的泽连斯基一脸凝重故作镇定，两边的布林肯和奥斯汀像在强颜欢笑，一副深不可测的样子。北约的獠牙、美国的真实意图、乌克兰的野心，俄罗斯将面对的还有更多。</p>
+                                <p>
+                                    <!--viewpoint-->
+                                </p>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="sep20"></div>
+            <div class="create-reply">
+                <form action="#" method="post">
+                    <div class="sep10"></div>
+                    <textarea name="replyContent" id="reply-content"></textarea>
+                    <input class="button" value='Submit' type='submit'>
+                </form>
+            </div>
+            <div class="sep20"></div>
         </div>
         <div class="rightBar">
-            <div class="inner" th:if="${session['loginUser']}!=null">
+            <div class="inner">
                 <div class="box">
                     <div class="box-title">
                         <ul>
                             <li class="info-box">
-                                <a href="#"><img id="avatar" th:src="${session.loginUser.avatar}" alt="avatar"></a>
+                                <a href="#"><img id="avatar" src="../static/images/0422de8ba1bd4cb7b5f0fc2c2991c76e.png" alt="avatar"></a>
                             </li>
-                            <li class="info-box"><a id="name" href="#">[[${session.loginUser.name}]]</a></li>
+                            <li class="info-box"><a id="name" href="#">lucas</a></li>
                         </ul>
                     </div>
                     <div class="box-content">
@@ -101,31 +133,6 @@
                     </div>
                     <div class="create_topic">
                         <a href="#">发布新主题</a>
-                    </div>
-                </div>
-                <div class="sep20"></div>
-                <div class="emotion">
-                    <div class="emotion-title">
-                        <h3>emotion</h3>
-                    </div>
-                    <div class="create-emotion">
-                        <form method="post" th:action="@{/addEmotion}">
-                            <input id="content" name='emotion' placeholder="You Can Write Your Emotion Here!">
-                            <input class="button" value='Submit' type='submit'>
-                        </form>
-                    </div>
-                    <div class="emotion-content">
-                        <ul th:each="emotion:${emotions}">
-                            <li class="emotion-item">
-                                <p>[[${emotion.content}]]</p>
-                                <form method="post" th:action="@{/delEmotion}">
-                                    <input type="hidden" name="id" th:value="${emotion.id}">
-                                    <input class="button" value='DEL' type='submit'>
-                                </form>
-                                <span>· [[${emotion.time}]]</span>
-                            </li>
-                        </ul>
-                        <a href="#"><span class="watch-more">查看更多</span></a>
                     </div>
                 </div>
             </div>

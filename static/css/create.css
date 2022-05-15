@@ -4,24 +4,6 @@ body {
     font-family: "JetBrains Mono", "Luxi Sans", "Segoe UI", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Logo";
 }
 
-
-/* 两个间隔标签 */
-
-.sep20 {
-    height: 20px;
-    width: auto;
-    background-color: #22303f;
-}
-
-.sep10 {
-    height: 10px;
-    width: auto;
-    background-color: #22303f;
-}
-
-
-/* 标题栏 */
-
 .top {
     height: 44px;
     width: 100%;
@@ -32,10 +14,12 @@ body {
     height: 44px;
     width: 1100px;
     margin: 0 auto;
+    /* background-color: pink; */
 }
 
 .top .tools {
     float: right;
+    /* background-color: #fff; */
 }
 
 .top .tools ul li {
@@ -55,11 +39,27 @@ body {
 }
 
 
+/* 两个间隔标签 */
+
+.sep20 {
+    height: 20px;
+    width: auto;
+    background-color: #22303f;
+}
+
+.sep10 {
+    height: 10px;
+    width: auto;
+    background-color: #22303f;
+}
+
+
 /* 版心在中间 */
 
 .wrapper {
     width: 1100px;
     height: auto;
+    background-color: #3e5874;
     margin: 0 auto;
 }
 
@@ -69,159 +69,102 @@ body {
     height: auto;
 }
 
-.left .topic-header {
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #18222d;
-    font-size: 18px;
-    border: 1px solid #3e5874;
+.left .content {
+    height: auto;
+    width: 770px;
+    margin: 0 auto;
+    /* background-color: #fff; */
 }
 
-.left .topic-header .href {
+.left .content .content-top,
+.syntax,
+.topic-type,
+.topic-submit {
+    height: 40px;
+    width: 770px;
+    margin: 0 auto;
+    padding-left: 10px;
+    line-height: 40px;
+    background-color: #18222d;
+    border-bottom: #22303f solid 1px;
+}
+
+.left .content .content-top span {
+    color: #9caec7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.left .content .content-top span a {
+    color: #9caec7;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.left .content .content-top span a:hover {
+    text-decoration: underline;
+}
+
+.left .content #topic-title {
+    font-size: 20px;
+    line-height: 36px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    height: 36px;
+    width: 770px;
+    background-color: #18222d;
+    border: #22303f solid 1px;
+    color: aliceblue;
+    resize: none;
+}
+
+.left .syntax span {
+    color: #9caec7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.left .topic-content textarea {
     width: 770px;
     height: auto;
-    font-size: 16px;
+    min-height: 400px;
+    margin: 0 auto;
+    background-color: #18222d;
+    border: #22303f solid 1px;
+    color: aliceblue;
+    font-size: 18px;
+    line-height: 36px;
+    padding: 10px;
+    resize: none;
 }
 
-.left .topic-header .href a {
-    color: #bfbfbf;
-}
-
-.left .topic-header .href a:hover {
-    color: #99dff9;
-}
-
-.left .topic-header .href span {
-    color: #8b8b8b;
-}
-
-.left .topic-header .topic-title {
-    position: relative;
-}
-
-.left .topic-header .topic-title h3 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 150%;
-    margin: 10px 90px 10px 0;
-    padding: 0;
-    color: #fff;
-}
-
-.left .topic-header .topic-title #author a {
-    font-size: 15px;
+.left .topic-type span {
+    color: #9caec7;
+    font-size: 18px;
     font-weight: bold;
-    color: #bfbfbf;
 }
 
-.left .topic-header .topic-title #author a:hover {
-    color: #99dff9;
+.left .topic-type select {
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #2d3033;
+    border: #22303f solid 1px;
+    color: aliceblue;
+    font-size: 18px;
+    line-height: 40px;
 }
 
-.left .topic-header .topic-title #click-count {
-    font-size: 14px;
-    color: #bfbfbf;
-}
-
-.left .topic-header .topic-title #time {
-    font-size: 14px;
-    color: #dadada;
-}
-
-.left .topic-header .topic-title img {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    max-width: 55px;
-    max-height: 55px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-}
-
-.left .topic-content {
-    padding: 30px;
-    font-size: 17px;
-    color: #aeaeae;
-    background-color: #18222d;
-    border: 1px solid #3e5874;
-    border-radius: 5px;
-}
-
-.left .topic-content p {
-    text-indent: 2em;
-}
-
-.left .topic-content span {
-    float: right;
-    font-size: 14px;
-    color: #989696;
-}
-
-.left .comments {
-    padding: 5px;
-    color: #bfbfbf;
-    background-color: #18222d;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #b7b6ff;
-}
-
-.left .comment-count {
+.left .topic-submit input {
+    background-color: #00c403;
+    border: none;
+    color: #f5f5f5;
     padding: 5px 10px;
-    border-bottom: 1px solid #a6a6a6;
-}
-
-.left .cell {
-    position: relative;
-    border-bottom: 1px solid #475059;
-}
-
-.left .comments .cell .reply-avatar img {
-    position: absolute;
-    left: 5px;
-    top: 10px;
-    width: 48px;
-    height: 48px;
-    max-height: 48px;
-    border-radius: 10px;
-}
-
-.left .comments .cell .reply-info {
-    margin-left: 70px;
-    padding: 10px 20px 10px 0;
-    width: 700px;
-    height: auto;
-}
-
-.left .comments .cell .reply-info a {
-    padding-left: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #bfbfbf;
-}
-
-.left .comments .cell .reply-info a:hover {
-    color: #57c9dd;
-}
-
-.left .comments .cell .reply-info #time {
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    font-size: 15px;
-    margin-left: 20px;
-    font-weight: normal;
-    color: #bfbfbf;
-}
-
-.left .comments .cell .reply-info #count {
-    position: absolute;
-    padding: 1px 2px;
-    right: 10px;
-    top: 8px;
-    border-radius: 6px;
-    background-color: #2f4348;
-}
-
-.left .comments .cell .reply-info p {
-    padding-top: 5px;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
 
@@ -467,7 +410,7 @@ body {
 }
 
 .rightBar .emotion .emotion-content .emotion-item .button:hover {
-    background-color: #09840d;
+    background-color: #033580;
     border: none;
 }
 
@@ -496,41 +439,4 @@ body {
 
 .watch-more:hover {
     color: #cfcccc;
-}
-
-.left .create-reply {
-    width: 770px;
-    background-color: #18222d;
-}
-
-.left .create-reply label {
-    display: inline-block;
-    width: 770px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #bfbfbf;
-}
-
-.left .create-reply textarea {
-    width: 770px;
-    height: 300px;
-    background-color: #57585a;
-    color: #2a2a2a;
-    font-size: 16px;
-}
-
-.left .create-reply form .button {
-    display: inline-block;
-    margin: 0 10px 0 700px;
-    background-color: #00c403;
-    border: none;
-    color: #f5f5f5;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
 }

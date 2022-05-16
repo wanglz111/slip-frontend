@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/revise_info.css">
+</head>
+
+<body>
+    <div class="revise">
+        <div class="title">
+            <h1>Reset</h1>
+            <img src="../static/images/reset.png" alt = "sign-up">
+        </div>
+        <div>
+            <p style="color:red">欢迎重置信息</p>
+            <p class="username">尊敬的王先生</p>
+        </div>
+        <div class="revise_info">
+            <!--<form>-->
+              
+                <div class = "generate">
+                    <button class="generator" onclick="random_generator()">Randomly Generate Password</button>
+                </div>
+
+                <div>
+                    <label for="password">New Password:</label>
+                    <input type="text" name="password" id="password">
+                    
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm New Password:</label>
+                    <input type="text" name="confirmPassword" id="confirmPassword">
+                </div>
+                <div>
+                    <label for="telephone">New Telephone:</label>
+                    <input type="text" name="telephone" id="telephone">
+                </div>
+                <div>
+                    <label for="email">New Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <!--avatar-->
+                <div>
+                    <label for="avatar">New Avatar:(不上传为默认生成)</label>
+                    <input type="file" name="avatar" id="avatar">
+                </div>
+                <div>
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            <!--</form>-->
+        </div>
+    </div>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

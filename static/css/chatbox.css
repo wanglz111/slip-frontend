@@ -196,6 +196,8 @@ body {
     width: 700px;
     height: 600px;
     background-color: #3e5874;
+    position: relative;
+    overflow: scroll;
 
 }
 
@@ -203,13 +205,11 @@ body {
     border: 2px solid #dedede;
     background-color: #f1f1f1;
     border-radius: 5px;
- 
     padding: 10px;
     margin: 10px 0;
   }
   
   .darker {
- 
     border-color: #ccc;
     background-color: #ddd;
   }
@@ -272,4 +272,35 @@ body {
     background-color: #22303f;
     cursor: pointer;
     color: white;
+}
+
+.wrapper .enter{
+    position: relative;
+    float: right;
+
+   
+}
+
+.wrapper .enter #text{
+    margin-top: 30px;
+
+
+}
+.wrapper .response_message{
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 4px;
+    height: 60px;
+    width: 100px;
+    background-color: rgba(156, 174, 199, 0.8);
+    border-radius: 5px;
+    border: 1px solid rgba(156, 174, 199, 0.7);
+}
+
+.wrapper .response_message:hover{
+    background-color: #22303f;
+    cursor: pointer;
+    color: white;
+
 }

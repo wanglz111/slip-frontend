@@ -51,6 +51,16 @@
                             <td>1339@qq.com</td>
                         </tr>
                     </table>
+                    <div class="add-friend">
+                        <form action="post">
+                            <button type="submit">add</button>
+                        </form>
+                    </div>
+                    <div class="chat-friend">
+                        <form action="post">
+                            <button type="submit">chat</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="sep20"></div>
@@ -124,7 +134,7 @@
                         <ul th:each="emotion:${emotions}">
                             <li class="emotion-item">
                                 <p>[[${emotion.content}]]</p>
-                                <form method="postß" th:action="@{/delEmotion}">
+                                <form method="post" th:action="@{/delEmotion}">
                                     <input type="hidden" name="id" th:value="${emotion.id}">
                                     <input class="button" value='DEL' type='submit'>
                                 </form>
